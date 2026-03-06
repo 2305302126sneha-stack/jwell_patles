@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Orné | Exquisite Fine Jewellery</title>
+    <meta name="description"
+        content="Discover the finest collection of handcrafted diamond necklaces, rings, and earrings at Luxe Orné. Timeless elegance for every occasion.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">LUXE<span>ORNÉ</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Collections</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Timeless Elegance in Every Detail</h1>
+            <p>Explore our curated collection of masterfully crafted jewellery, designed to celebrate life's most
+                precious moments.</p>
+            <a href="#shop" class="btn btn-primary">Discover Collection</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="shop" class="reveal">
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="jewellery_rings.png" alt="Rings Collection">
+                <div class="category-overlay">
+                    <h3>Handcrafted Rings</h3>
+                    <p>Symbol of eternal love</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="jewellery_earrings.png" alt="Earrings Collection">
+                <div class="category-overlay">
+                    <h3>Exquisite Earrings</h3>
+                    <p>Designed to sparkle</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="jewellery_bracelets.png" alt="Bracelets Collection">
+                <div class="category-overlay">
+                    <h3>Delicate Bracelets</h3>
+                    <p>Crafted with precision</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="reveal">
+        <div class="section-title">
+            <h2>Our Signature Pieces</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="jewellery_hero.png" alt="Diamond Choker">
+                </div>
+                <div class="product-info">
+                    <h3>Aurelia Diamond Choker</h3>
+                    <p class="price">$12,500</p>
+                    <button class="btn add-btn" onclick="addToCart()">Add to Bag</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="jewellery_rings.png" alt="Solitaire Ring">
+                </div>
+                <div class="product-info">
+                    <h3>Eternal Solitaire Ring</h3>
+                    <p class="price">$8,200</p>
+                    <button class="btn add-btn" onclick="addToCart()">Add to Bag</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="jewellery_earrings.png" alt="Floral Drops">
+                </div>
+                <div class="product-info">
+                    <h3>Midnight Floral Drops</h3>
+                    <p class="price">$4,900</p>
+                    <button class="btn add-btn" onclick="addToCart()">Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story reveal" id="about">
+        <div class="story-img">
+            <img src="jewellery_bracelets.png" alt="Craftsmanship">
+        </div>
+        <div class="story-text">
+            <h2>The Art of Craftsmanship</h2>
+            <div class="underline" style="margin: 0 0 20px 0;"></div>
+            <p>At Luxe Orné, we believe that jewellery is more than just an accessory—it's a story told in gold and
+                diamonds. Each piece is meticulously handcrafted by our master artisans, ensuring that every curve and
+                sparkle meets our rigorous standards of perfection.</p>
+            <p>From sourcing the finest ethical gemstones to the final polish, our commitment to quality is unwavering.
+                Join us in celebrating a legacy of luxury.</p>
+            <a href="#" class="btn">Read Our Story</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color: white; margin-bottom: 20px;">LUXE<span>ORNÉ</span></div>
+                <p>Curating timeless elegance since 1994. The destination for fine jewellery and exceptional service.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#">Engagement Rings</a></li>
+                    <li><a href="#">Earrings</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Custom Design</a></li>
+                    <li><a href="#">Jewelry Repair</a></li>
+                    <li><a href="#">Sizing Guide</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to stay updated on our latest collections and events.</p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed!')">
+                    <input type="email" placeholder="Email Address" required>
+                    <button class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Orné Fine Jewellery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
